@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/beer.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -1177,4 +1177,8 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 10px black;
 }
