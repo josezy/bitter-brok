@@ -18,8 +18,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Minimal';
+  src: url('./../fonts/Minimal.ttf') format('truetype'),
+       url('./../fonts/Minimal.woff') format('woff'),
+       url('./../fonts/Minimal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .breathe-fire {
     font-family: "BreatheFireII"
+}
+.minimal {
+  font-family: "Minimal";
 }
 
 :root {
@@ -56,6 +68,7 @@ body::before {
 
 .beer-card {
   max-width: 100%;
+  height: 400px;
 }
 
 @media (min-width: 1024px) {
@@ -360,7 +373,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
   padding: 30px;
 }
 
@@ -683,16 +696,22 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Cervezas
 --------------------------------------------------------------*/
-.services .icon-box {
+.cervezas .beer-container {
+  background: rgba(0, 0, 0, 0.9);
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.cervezas .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box .icon {
+.cervezas .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -706,12 +725,12 @@ section .container {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
+.cervezas .icon-box .icon i {
   color: #fff;
   font-size: 28px;
 }
 
-.services .icon-box .icon::before {
+.cervezas .icon-box .icon::before {
   position: absolute;
   content: '';
   left: -8px;
@@ -724,40 +743,40 @@ section .container {
   transform: translateZ(-1px);
 }
 
-.services .icon-box h4 {
+.cervezas .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.services .icon-box h4 a {
+.cervezas .icon-box h4 a {
   color: #fff;
 }
 
-.services .icon-box p {
+.cervezas .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
+.cervezas .icon-box:hover {
   background: var(--main-color);
   border-color: var(--main-color);
 }
 
-.services .icon-box:hover .icon {
+.cervezas .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.cervezas .icon-box:hover .icon i {
   color: var(--main-color);
 }
 
-.services .icon-box:hover .icon::before {
+.cervezas .icon-box:hover .icon::before {
   background: var(--main-color);
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.cervezas .icon-box:hover h4 a, .cervezas .icon-box:hover p {
   color: #fff;
 }
 
