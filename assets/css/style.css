@@ -30,6 +30,11 @@
 .breathe-fire {
     font-family: "BreatheFireII"
 }
+/*  Ajuste de la fuente en 410px no se mezcla con el navbar  */
+@media (max-width: 410px) {
+  .text-shadow a.breathe-fire {
+    font-size: 3.3rem !important;
+}}
 .minimal {
   font-family: "Minimal";
 }
