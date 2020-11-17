@@ -82,6 +82,17 @@ body::before {
     height: auto;
   }
 }
+/*  Ajuste de display para intercalar de derecha a izquierda  */
+@media (min-width: 992px) {
+  .beer-card.h {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .beer-card.no-h {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
