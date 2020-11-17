@@ -76,7 +76,12 @@ body::before {
   max-width: 100%;
   height: 400px;
 }
-
+/*  Ajuste de tamaño para 490px  */
+@media (max-width: 490px) {
+  .beer-card {
+    height: auto;
+  }
+}
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
