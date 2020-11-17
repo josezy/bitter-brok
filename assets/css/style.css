@@ -65,7 +65,13 @@ body::before {
   height: 100vh;
   z-index: -1;
 }
-
+@media (max-width: 750px) {
+  body::before {
+    background: url('../img/beer750px.jpg')top right no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+  }
+}
 .beer-card {
   max-width: 100%;
   height: 400px;
