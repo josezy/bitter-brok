@@ -80,6 +80,8 @@ body::before {
 .beer-card {
   max-width: 100%;
   height: 400px;
+  /*  Reinicio el padding de la tarjeta quedando al borde del contenedor */
+  padding: 0;
 }
 /*  Ajuste de tamaño para 490px  */
 @media (max-width: 490px) {
@@ -729,6 +731,9 @@ section .container {
   background: rgba(0, 0, 0, 0.9);
   margin-bottom: 1rem;
   display: flex;
+  /* Reinicie el margen de bootstrap grid y lo ajuste visualmente */
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .cervezas .icon-box {
